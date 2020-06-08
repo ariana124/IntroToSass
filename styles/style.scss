@@ -1,0 +1,10 @@
+@import "./variables";
+@import "./header";
+
+.contact {
+    @include flexCenter(column);
+}
+
+.info {
+    @include flexCenter(column);    
+}

@@ -1,0 +1,22 @@
+/* @mixin allows for the creation of js style functions to apply this styling to other elements. */
+@mixin flexCenter ($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: $direction;
+}
+
+header {
+    @include flexCenter(column);
+
+    background: lightseagreen;
+    /* Sass allows for nesting, this is equivalent to header button {}. */
+    button {
+        background: $primaryBtn;
+        /* The ampersand lets you omit the word button in order to use focus, hover, after, etc. */
+        &:hover {
+            background: rgb(255, 145, 0);
+        }
+    }
+}

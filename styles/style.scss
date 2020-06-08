@@ -8,3 +8,16 @@
 .info {
     @include flexCenter(column);    
 }
+
+/* @extend allows for an element to inherit the styling of another element.
+    Eg. .contact {
+            @extend header;
+        }
+    This means that the contact div will inherit the styling of the header element.
+    You can override the styling in @extend by simply adding more styling under it.
+    Eg. .contact {
+            @extend header;
+            background: red;
+        }
+        Instead of the background color of light sea green, the background becomes red.
+*/
